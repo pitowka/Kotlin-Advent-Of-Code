@@ -1,14 +1,12 @@
 package common
 
-import _2015.Day1
-
 interface Day {
-    fun part1()
-    fun part2()
+    fun part1(): Any
+    fun part2(): Any
 
     fun solve(){
-        part1()
-        part2()
+        println(part1())
+        println(part2())
     }
 
     fun resourceAsString(name: String) = this::class.java.getResource(name)!!.readText()
